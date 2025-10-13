@@ -1,0 +1,6 @@
+.vscode/
+.antlr/
+.idea/
+build/
+test/
+.clangd
