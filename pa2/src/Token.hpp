@@ -14,27 +14,29 @@ enum class TokenType
   REAL,
   SCI,
 
-  EQ,
-  NE,
-  LT,
-  LE,
-  GT,
-  GE,
+  // Operator
+  EQ, // =
+  NE, // <>
+  LT, // <
+  LE, // <=
+  GT, // >
+  GE, // >=
 
-  L_PAREN,
-  R_PAREN,
-  L_BRACE,
-  R_BRACE,
-  L_BRACKET,
-  R_BRACKET,
-  COMMA,
-  SEMI,
+  L_PAREN,   // (
+  R_PAREN,   // )
+  L_BRACE,   // {
+  R_BRACE,   // }
+  L_BRACKET, // [
+  R_BRACKET, // ]
+  COMMA,     // ,
+  SEMI,      // ;
 
-  PLUS,
-  MINUS,
-  MUL,
-  DIV,
-  DOT
+  PLUS,  // +
+  MINUS, // -
+  MUL,   // *
+  DIV,   // /
+  DOT,   // .
+  SQUOTE // '
   // TODO: add more
 };
 
