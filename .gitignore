@@ -46,3 +46,16 @@
 .idea/
 .cache/
 build/
+
+# ANTLR generated files
+*.tokens
+*.interp
+*Lexer.java
+*Parser.java
+*Listener.java
+*Visitor.java
+*BaseListener.java
+*BaseVisitor.java
+
+# Java class
+*.class
