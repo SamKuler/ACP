@@ -2,7 +2,8 @@
 #include <string>
 #include "Token.hpp"
 
-class Lexer {
+class Lexer
+{
 public:
   static const int EOF_CHAR = -1;
 
@@ -17,6 +18,6 @@ protected:
   int peek; // current char or EOF_CHAR
   int line; // current line number
 
-  void advance(); // consume current char and advance to next char
+  void advance();            // consume current char and advance to next char
   void resetPos(int newPos); // reset pos to newPos and update peek accordingly
 };

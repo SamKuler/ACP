@@ -2,7 +2,8 @@
 #include "Lexer.hpp"
 #include "KeywordTable.hpp"
 
-class DragonLexer : public Lexer {
+class DragonLexer : public Lexer
+{
 public:
   DragonLexer(const std::string &input);
   Token nextToken() override;

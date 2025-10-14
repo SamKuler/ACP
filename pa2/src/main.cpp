@@ -3,19 +3,26 @@
 #include "DragonLexer.hpp"
 #include "Token.hpp"
 
-int main() {
+int main()
+{
   std::ostringstream ss;
   ss << std::cin.rdbuf();
   std::string input = ss.str();
 
   DragonLexer lexer(input);
-  while (true) {
+  while (true)
+  {
     Token t = lexer.nextToken();
-    if (t.type == TokenType::WS) {
+    if (t.type == TokenType::WS)
+    {
       continue;
-    } else if (t.type == TokenType::EOF_T) {
+    }
+    else if (t.type == TokenType::EOF_T)
+    {
       break;
-    } else {
+    }
+    else
+    {
       std::string typ = tokenTypeToString(t.type);
       std::cout << typ << " " << t.text << " at Line " << t.line << "." << std::endl;
     }
