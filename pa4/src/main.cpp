@@ -24,6 +24,7 @@ int main(int argc, const char *argv[]) {
 
   tree::ParseTree *tree = parser.program();
 
-  // TODO: Create your visitor and interpret the parse tree
+  InterpreterVisitor visitor;
+  visitor.visit(tree);
   return 0;
 }
