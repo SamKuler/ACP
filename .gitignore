@@ -64,3 +64,12 @@ build/
 *.zip
 *.7z
 *.tar.gz
+
+# Visual Studio
+.vs/
+*.log
+*.tlog
+*.tlog/
+*.recipe
+**/Debug/**
+**/Release/**
